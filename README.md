@@ -62,6 +62,7 @@ cd ~ && wget https://raw.githubusercontent.com/jiuaiwo/ServerStatus/main/status.
 # ]
 ```
 
+```
 # 更多用法：
 ❯ bash status.sh
 
