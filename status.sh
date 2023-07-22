@@ -41,7 +41,7 @@ help:\n\
         -i -s           安装 Server\n\
         -i -c           安装 Client\n\
         -i -c conf      自动安装 Client\n\
-    -up,--upgrade   升级 Status\n\
+    -up,--upgrade   不要升级 Status\n\
         -up -s          升级 Server\n\
         -up -c          升级 Client\n\
         -up -a          升级 Server and Client\n\
