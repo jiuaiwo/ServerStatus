@@ -36,15 +36,15 @@ hosts = [
 # gid 为模板组id, 自动注册唯一标识，不可重复
 hosts_group = [
   # 可以按国家地区或用途来做分组
-  {gid = "cn", password = "andyou", location = "🇨🇳", type = "kvm", notify = true},
-  {gid = "hk", password = "andyou", location = "🇭🇰", type = "kvm", notify = true},
-  {gid = "qt", password = "andyou", location = "🇺🇳", type = "kvm", notify = true},
-  {gid = "jp", password = "andyou", location = "🇯🇵", type = "kvm", notify = true},
-  {gid = "kr", password = "andyou", location = "🇰🇷", type = "kvm", notify = true},
-  {gid = "sp", password = "andyou", location = "🇸🇬", type = "kvm", notify = true},
-  {gid = "home", password = "andyou", location = "🏠", type = "kvm", notify = true},
+  {gid = "cn", password = "111111", location = "🇨🇳", type = "kvm", notify = true},
+  {gid = "hk", password = "111111", location = "🇭🇰", type = "kvm", notify = true},
+  {gid = "qt", password = "111111", location = "🇺🇳", type = "kvm", notify = true},
+  {gid = "jp", password = "111111", location = "🇯🇵", type = "kvm", notify = true},
+  {gid = "kr", password = "111111", location = "🇰🇷", type = "kvm", notify = true},
+  {gid = "sp", password = "111111", location = "🇸🇬", type = "kvm", notify = true},
+  {gid = "home", password = "111111", location = "🏠", type = "kvm", notify = true},
   # 例如不发送通知可以单独做一组
-  {gid = "silent", password = "pp", location = "🏡", type = "kvm", notify = false},
+  {gid = "cn", password = "111111", location = "🏡", type = "kvm", notify = false},
 ]
 # 动态注册模式下，无效数据清理间隔，默认 30s
 group_gc = 30
@@ -61,11 +61,11 @@ notify_interval = 30
 # https://core.telegram.org/bots/api
 # https://jinja.palletsprojects.com/en/3.0.x/templates/#if
 [tgbot]
-# 开关 true 打开
-enabled = true
-tgapi = "https://tgapi.goken.top"
-bot_token = "5855504687:AAF2OqOi9R_T1RuaPODueCkLENHOsEc132w"
-chat_id = "593582991"
+# 开关 true 打开  false 关闭
+enabled = false
+tgapi = "https://tgapi.goken.top" ## tgapi 地址 ,这个地址国内服务器的话就这样别动
+bot_token = "bot_token"
+chat_id = "chat_id"
 # host 可用字段见 payload.rs 文件 HostStat 结构, {{host.xxx}} 为占位变量
 # 例如 host.name 可替换为 host.alias，大家根据自己的喜好来编写通知消息
 # {{ip_info.query}} 主机 ip, {{sys_info.host_name}} 主机 hostname，见 server_status.proto
@@ -146,7 +146,7 @@ custom_tpl = """
 # script 使用脚本引擎 https://rhai.rs/book/
 [webhook]
 # 总开关
-enabled = true
+enabled = false
   # 可多个 webhook.receiver
   [[webhook.receiver]] # 通用型 webhook
   # 局部开关
@@ -242,7 +242,7 @@ enabled = true
   [[webhook.receiver]] # WorkWechat
   enabled = false
   # https://developer.work.weixin.qq.com/document/path/91770
-  url = "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=3471d241-6202-4fe3-81b8-c52c27442666"
+  url = "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=1111111111"
   headers = { content-type = "application/json" }
   timeout = 5 #s
   script = """

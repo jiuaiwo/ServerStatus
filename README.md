@@ -60,6 +60,9 @@ cd ~ && wget https://raw.githubusercontent.com/jiuaiwo/ServerStatus/main/status.
 #   # 例如不发送通知可以单独做一组
 #   {gid = "silent", password = "111111", location = "🏡", type = "kvm", notify = false},
 # ]
+
+# wechat, email, webhook 等其它通知方式 配置详细见 config.toml
+
 ```
 
 ```
