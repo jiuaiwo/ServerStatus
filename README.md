@@ -51,7 +51,7 @@ cd ~ && wget https://github.goken.top/jiuaiwo/ServerStatus/main/status.sh -O sta
 
 # 安装 客户端 配置采用了自动分组
 cd ~ && wget https://github.goken.top/jiuaiwo/ServerStatus/main/status.sh -O status.sh && bash status.sh -un -c && bash status.sh -i -c  grpc://cn:111111@你的服务端IP:9394
-# grpc://cn:andyou@你的服务端IP:9394
+# grpc://cn:andyou@你的服务端IP:9394          账号:密码
 # 上面地址 对应config.toml
 # hosts_group = [
 #   {gid = "cn", password = "111111", location = "🇨🇳", type = "kvm", notify = true},
@@ -68,7 +68,7 @@ Python:
 apt -y install python3-pip
 python3 -m pip install psutil requests py-cpuinfo
 
-cd ~ && wget https://github.goken.top/jiuaiwo/ServerStatus/main/client/stat_client.py -O stat_client.py && python3 stat_client.py -a "http://你的服务端IP:8080/report" -g home -p andyou
+cd ~ && wget https://github.goken.top/jiuaiwo/ServerStatus/main/client/stat_client.py -O stat_client.py && python3 stat_client.py -a "http://你的服务端IP:8080/report" -g 账号 -p 密码
 
 ```
 
