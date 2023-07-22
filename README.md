@@ -60,7 +60,7 @@ cd ~ && wget https://raw.githubusercontent.com/jiuaiwo/ServerStatus/main/status.
 #   # 例如不发送通知可以单独做一组
 #   {gid = "silent", password = "111111", location = "🏡", type = "kvm", notify = false},
 # ]
-
+```
 
 # 更多用法：
 ❯ bash status.sh
