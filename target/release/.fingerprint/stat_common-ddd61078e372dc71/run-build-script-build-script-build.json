@@ -1,0 +1,1 @@
+{"rustc":13806626623373421372,"features":"","target":0,"profile":0,"path":0,"deps":[[7917249905351430806,"build_script_build",false,18063435083232362747]],"local":[{"RerunIfChanged":{"output":"release/build/stat_common-ddd61078e372dc71/output","paths":["proto/server_status.proto","proto"]}}],"rustflags":[],"metadata":0,"config":0,"compile_kind":0}

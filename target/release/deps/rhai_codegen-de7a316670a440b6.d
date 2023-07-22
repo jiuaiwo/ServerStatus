@@ -1,0 +1,10 @@
+/workspaces/ServerStatus/target/release/deps/librhai_codegen-de7a316670a440b6.so: /home/codespace/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rhai_codegen-1.5.0/src/lib.rs /home/codespace/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rhai_codegen-1.5.0/src/attrs.rs /home/codespace/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rhai_codegen-1.5.0/src/function.rs /home/codespace/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rhai_codegen-1.5.0/src/module.rs /home/codespace/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rhai_codegen-1.5.0/src/register.rs /home/codespace/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rhai_codegen-1.5.0/src/rhai_module.rs
+
+/workspaces/ServerStatus/target/release/deps/rhai_codegen-de7a316670a440b6.d: /home/codespace/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rhai_codegen-1.5.0/src/lib.rs /home/codespace/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rhai_codegen-1.5.0/src/attrs.rs /home/codespace/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rhai_codegen-1.5.0/src/function.rs /home/codespace/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rhai_codegen-1.5.0/src/module.rs /home/codespace/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rhai_codegen-1.5.0/src/register.rs /home/codespace/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rhai_codegen-1.5.0/src/rhai_module.rs
+
+/home/codespace/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rhai_codegen-1.5.0/src/lib.rs:
+/home/codespace/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rhai_codegen-1.5.0/src/attrs.rs:
+/home/codespace/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rhai_codegen-1.5.0/src/function.rs:
+/home/codespace/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rhai_codegen-1.5.0/src/module.rs:
+/home/codespace/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rhai_codegen-1.5.0/src/register.rs:
+/home/codespace/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rhai_codegen-1.5.0/src/rhai_module.rs:

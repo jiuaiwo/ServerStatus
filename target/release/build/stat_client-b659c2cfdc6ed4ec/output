@@ -1,0 +1,1 @@
+cargo:rustc-env=APP_VERSION=v1.7.3 (484f54d, 2023-07-22 03:21:10 UTC, rustc 1.71.0, x86_64-unknown-linux-gnu)
