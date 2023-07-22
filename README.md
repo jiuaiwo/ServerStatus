@@ -47,10 +47,10 @@
 
 ```bash
 # 安装 服务端
-cd ~ && wget https://raw.githubusercontent.com/jiuaiwo/ServerStatus/main/status.sh -O status.sh && bash status.sh -i -s
+cd ~ && wget https://github.goken.top/jiuaiwo/ServerStatus/main/status.sh -O status.sh && bash status.sh -i -s
 
 # 安装 客户端 配置采用了自动分组
-cd ~ && wget https://raw.githubusercontent.com/jiuaiwo/ServerStatus/main/status.sh -O status.sh && bash status.sh -un -c && bash status.sh -i -c  grpc://cn:111111@你的服务端IP:9394
+cd ~ && wget https://github.goken.top/jiuaiwo/ServerStatus/main/status.sh -O status.sh && bash status.sh -un -c && bash status.sh -i -c  grpc://cn:111111@你的服务端IP:9394
 # grpc://cn:andyou@你的服务端IP:9394
 # 上面地址 对应config.toml
 # hosts_group = [
@@ -62,6 +62,13 @@ cd ~ && wget https://raw.githubusercontent.com/jiuaiwo/ServerStatus/main/status.
 # ]
 
 # wechat, email, webhook 等其它通知方式 配置详细见 config.toml
+
+# mac 客户端 ,windows 我运行不起
+Python:
+apt -y install python3-pip
+python3 -m pip install psutil requests py-cpuinfo
+
+cd ~ && wget https://github.goken.top/jiuaiwo/ServerStatus/main/client/stat_client.py -O stat_client.py && python3 stat_client.py -a "http://你的服务端IP:8080/report" -g home -p andyou
 
 ```
 
