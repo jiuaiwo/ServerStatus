@@ -160,7 +160,7 @@ function check_client() {
 
 # 获取仓库最新版本号,运行可获得 'v1.7.2' 这样的版本号
 function get_latest_version() {
-  api_url="https://api.github.com/repos/zdz/ServerStatus-Rust/releases/latest"
+  api_url="https://api.github.com/repos/jiuaiwo/ServerStatus/releases/latest"
   local latest_version # 声明和赋值分开写，是编译器给的警告
   latest_version=$(wget -qO- "$api_url" | grep -Po '(?<="tag_name": ")[^"]*')
   echo "$latest_version"
@@ -330,15 +330,15 @@ function get_status() {
 
     # 判断为空或者 "-a" "--all"，为空可以兼容前面的函数功能
     if [ -z "$1" ] || [ "$1" = "-a" ] || [ "$1" = "--all" ]; then
-        wget --no-check-certificate -q "${MIRROR}https://data.gouer.vip/ServerStatus-Rust/target/release/stat_server.zip"
-        wget --no-check-certificate -q "${MIRROR}https://data.gouer.vip/ServerStatus-Rust/target/release/stat_client.zip"
+        wget --no-check-certificate -q "${MIRROR}https://github.com/jiuaiwo/ServerStatus/blob/main/target/release/stat_server.zip"
+        wget --no-check-certificate -q "${MIRROR}https://github.com/jiuaiwo/ServerStatus/blob/main/target/release/stat_client.zip"
         unzip -o stat_server.zip
         unzip -o stat_client.zip
     elif [ "$1" = "-s" ] || [ "$1" = "--server" ]; then
-        wget --no-check-certificate -q "${MIRROR}https://data.gouer.vip/ServerStatus-Rust/target/release/stat_server.zip"
+        wget --no-check-certificate -q "${MIRROR}https://github.com/jiuaiwo/ServerStatus/blob/main/target/release/stat_server.zip"
         unzip -o stat_server.zip
     elif [ "$1" = "-c" ] || [ "$1" = "--client" ]; then
-        wget --no-check-certificate -q "${MIRROR}https://data.gouer.vip/ServerStatus-Rust/target/release/stat_client.zip"
+        wget --no-check-certificate -q "${MIRROR}https://github.com/jiuaiwo/ServerStatus/blob/main/target/release/stat_client.zip"
         unzip -o stat_client.zip
     else
         echo "无效的参数"
