@@ -330,15 +330,15 @@ function get_status() {
 
     # 判断为空或者 "-a" "--all"，为空可以兼容前面的函数功能
     if [ -z "$1" ] || [ "$1" = "-a" ] || [ "$1" = "--all" ]; then
-        wget --no-check-certificate -q "${MIRROR}https://github.com/jiuaiwo/ServerStatus/blob/main/target/release/stat_server.zip"
-        wget --no-check-certificate -q "${MIRROR}https://github.com/jiuaiwo/ServerStatus/blob/main/target/release/stat_client.zip"
+        wget --no-check-certificate -q "${MIRROR}https://github.goken.top/jiuaiwo/ServerStatus/main/target/release/stat_server.zip"
+        wget --no-check-certificate -q "${MIRROR}https://github.goken.top/jiuaiwo/ServerStatus/main/target/release/stat_client.zip"
         unzip -o stat_server.zip
         unzip -o stat_client.zip
     elif [ "$1" = "-s" ] || [ "$1" = "--server" ]; then
-        wget --no-check-certificate -q "${MIRROR}https://github.com/jiuaiwo/ServerStatus/blob/main/target/release/stat_server.zip"
+        wget --no-check-certificate -q "${MIRROR}https://github.goken.top/jiuaiwo/ServerStatus/main/target/release/stat_server.zip"
         unzip -o stat_server.zip
     elif [ "$1" = "-c" ] || [ "$1" = "--client" ]; then
-        wget --no-check-certificate -q "${MIRROR}https://github.com/jiuaiwo/ServerStatus/blob/main/target/release/stat_client.zip"
+        wget --no-check-certificate -q "${MIRROR}https://github.goken.top/jiuaiwo/ServerStatus/main/target/release/stat_client.zip"
         unzip -o stat_client.zip
     else
         echo "无效的参数"
